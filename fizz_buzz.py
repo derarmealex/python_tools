@@ -28,9 +28,9 @@ while final < 101:
     if final % 15 == 0:
         print("FizzBuzz")
         final += 1
-    if final % 3 == 0:
+    elif final % 3 == 0:
         print("Fizz")
         final += 1
-    if final % 5 == 0:
+    elif final % 5 == 0:
         print("Buzz")
         final += 1
