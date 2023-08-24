@@ -1,7 +1,7 @@
-import methds_class
-print(methds_class.f3.func())
+import clss
+print(clss.f3.func())
 
-import methds_class as cs
+import clss as cs
 print(cs.f3.func())
 
 #from methds_class import f1
@@ -11,3 +11,5 @@ print(cs.f3.func())
 
 print(cs.__doc__)
 help(cs)
+
+print(cs.__name__)                               # clss
