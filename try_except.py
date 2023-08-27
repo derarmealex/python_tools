@@ -9,3 +9,10 @@ else:
     print("Ошибок не обнаружено")
 finally:
     f.close()
+
+my_file = open('Bob Kerrey-The Band Played Waltzing Matilda.mp3')
+try:
+   my_file.close()
+   print("File found!")
+except FileNotFoundError:
+   print("File not found!")
