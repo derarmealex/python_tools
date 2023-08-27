@@ -21,3 +21,4 @@ print(platform.architecture()[0])                   # 64bit
 
 import os.path
 print(os.path.isfile('Bob Kerrey-The Band Played Waltzing Matilda.mp3'))
+print(os.path.exists('Bob Kerrey-The Band Played Waltzing Matilda.mp3'))
