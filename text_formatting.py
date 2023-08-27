@@ -6,6 +6,9 @@ print(
 'Twinkle, twinkle, little star,\n'
 '\tHow I wonder what you are'
 )
+# cycle in a line
+for i in range(0, 10):
+    print('*', end="")                                              # **********
 # HEREDOC
 print("""
 a string that you "don't" have to escape
