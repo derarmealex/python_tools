@@ -14,7 +14,10 @@ import sys
 print(sys.version)
 
 import platform
-print(platform.python_version())
-print(platform.system())
+print(platform.python_version())                    # 3.11.5
+print(platform.system())                            # Windows
+print(platform.architecture())                      # ('64bit', 'WindowsPE')
+print(platform.architecture()[0])                   # 64bit
 
-input()
+import os.path
+print(os.path.isfile('Bob Kerrey-The Band Played Waltzing Matilda.mp3'))
