@@ -10,6 +10,7 @@ print(cs.f3.func())
 #print(f3.func())                                # NameError
 
 print(cs.__doc__)
+print(dir(cs))                                   # ['Movies', '__builtins__', '__cached__', '_ ...
 help(cs)
 
 print(cs.__name__)                               # clss
