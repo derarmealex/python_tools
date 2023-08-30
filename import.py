@@ -20,11 +20,13 @@ print(listdir('E:\music\playlist'))            # ['AaRON - Birds in the Storm.fl
 #print([f for f in listdir('E:\music\playlist') if isfile(join('E:\music\playlist', f))])
 for data in os.environ:
     print(os.environ[data])                    # ...
-print(os.path.abspath('LesDeuxTimides(1928)_movietroll')) # C:\Users\alexa\Desktop\LesDeuxTimides(1928)_movietroll
-
-import os.path
 print(os.path.isfile('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
 print(os.path.exists('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
+print(os.path.abspath('LesDeuxTimides(1928)_movietroll.avi')) # C:\Users\alexa\Desktop\LesDeuxTimides(1928)_movietroll.avi
+
+import os.path, time
+print("Last modified: %s" % time.ctime(os.path.getmtime("dzagigrow-moon-calendar-2023.pdf")))#Last modified: Mon Jul 31 18:08:48 2023
+print("Created: %s" % time.ctime(os.path.getctime("dzagigrow-moon-calendar-2023.pdf")))      #Created: Mon Jul 31 18:08:48 2023
 
 import platform
 print(platform.python_version())               # 3.11.5
