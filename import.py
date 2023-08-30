@@ -20,6 +20,7 @@ print(listdir('E:\music\playlist'))            # ['AaRON - Birds in the Storm.fl
 #print([f for f in listdir('E:\music\playlist') if isfile(join('E:\music\playlist', f))])
 for data in os.environ:
     print(os.environ[data])                    # ...
+print(os.path.abspath('LesDeuxTimides(1928)_movietroll')) # C:\Users\alexa\Desktop\LesDeuxTimides(1928)_movietroll
 
 import os.path
 print(os.path.isfile('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
@@ -37,8 +38,8 @@ import site
 print(site.getsitepackages())                  # ['C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11...
 
 import socket
-print(socket.gethostname())                     # DESKTOP-TD4SVJM
-print(socket.gethostbyname('DESKTOP-TD4SVJM'))  # 10.0.0.1
+print(socket.gethostname())                    # DESKTOP-TD4SVJM
+print(socket.gethostbyname('DESKTOP-TD4SVJM')) # 10.0.0.1
 
 import sys
 print(sys.version)                             # 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
