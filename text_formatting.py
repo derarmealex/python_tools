@@ -24,3 +24,8 @@ print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))  ##Address: B
 x, y = 4, 3
 result = x * x + 2 * x * y + y * y
 print("({} + {}) ^ 2) = {}".format(x, y, result))                   # (4 + 3) ^ 2) = 49
+
+x = 30
+y = 20
+print(f'{x}+{y}={x+y}')                                             # 30+20=50
+print('{}+{}={}'.format(x,y,x+y))                                   # 30+20=50
