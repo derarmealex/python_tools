@@ -22,10 +22,9 @@ address = "Bangalore, Karnataka, India"                             ##Age: 19
 print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))  ##Address: Bangalore, Karnataka, India
 
 x, y = 4, 3
-result = x * x + 2 * x * y + y * y
-print("({} + {}) ^ 2) = {}".format(x, y, result))                   # (4 + 3) ^ 2) = 49
-
-x = 30
-y = 20
-print(f'{x}+{y}={x+y}')                                             # 30+20=50
-print('{}+{}={}'.format(x,y,x+y))                                   # 30+20=50
+final = x * x + 2 * x * y + y * y
+print("({} + {}) ^ 2 = {}".format(x, y, final))                    # (4 + 3) ^ 2) = 49
+#or
+print("({} + {}) ^ 2 = {}".format(x, y, x * x + 2 * x * y + y * y))# (4 + 3) ^ 2) = 49
+#or
+print('(%d + %d) ^ 2 = %d' % (x, y, final))                        # (4 + 3) ^ 2) = 49
