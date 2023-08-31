@@ -16,14 +16,15 @@ print(math.pi)                                 # 3.141592653589793
 import os
 print(os.name)                                 # nt
 print(os.cpu_count())                          # 4
-print(listdir('E:\music\playlist'))            # ['AaRON - Birds in the Storm.flac', 'AaRON - Inner Streets.flac...
-#print([f for f in listdir('E:\music\playlist') if isfile(join('E:\music\playlist', f))])
-for data in os.environ:
-    print(os.environ[data])                    # ...
 print(os.path.isfile('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
 print(os.path.isdir('Bob Kerrey-The Band Played Waltzing Matilda.mp3'))  # True/False
 print(os.path.exists('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
 print(os.path.abspath('LesDeuxTimides(1928)_movietroll.avi')) # C:\Users\alexa\Desktop\LesDeuxTimides(1928)_movietroll.avi
+print(os.path.getsize('E:\music\Various Artists\Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # 4657964 [bytes]
+print(listdir('E:\music\playlist'))            # ['AaRON - Birds in the Storm.flac', 'AaRON - Inner Streets.flac...
+#print([f for f in listdir('E:\music\playlist') if isfile(join('E:\music\playlist', f))])
+for data in os.environ:
+    print(os.environ[data])                    # ...
 
 import os.path, time
 print("Last modified: %s" % time.ctime(os.path.getmtime("dzagigrow-moon-calendar-2023.pdf")))#Last modified: Mon Jul 31 18:08:48 2023
