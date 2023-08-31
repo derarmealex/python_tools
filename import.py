@@ -21,6 +21,7 @@ print(listdir('E:\music\playlist'))            # ['AaRON - Birds in the Storm.fl
 for data in os.environ:
     print(os.environ[data])                    # ...
 print(os.path.isfile('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
+print(os.path.isdir('Bob Kerrey-The Band Played Waltzing Matilda.mp3'))  # True/False
 print(os.path.exists('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
 print(os.path.abspath('LesDeuxTimides(1928)_movietroll.avi')) # C:\Users\alexa\Desktop\LesDeuxTimides(1928)_movietroll.avi
 
@@ -46,3 +47,10 @@ print(socket.gethostbyname('DESKTOP-TD4SVJM')) # 10.0.0.1
 import sys
 print(sys.version)                             # 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
 print(sys.platform)                            # win32
+print(sys.copyright)                           # Python Copyright Information...
+#print(copyright)                               # -//-
+print(sys.byteorder)                           # little/big
+print(sys.builtin_module_names)                # ('_abc', '_ast', '_bisect', '_blake2', '_codecs' ...
+print(sys.getsizeof())                         # ... bytes
+print(sys.getrecursionlimit())                 # 1000
+#sys.setrecursionlimit(1001)
