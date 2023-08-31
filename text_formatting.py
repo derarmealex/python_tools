@@ -23,8 +23,8 @@ print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))  ##Address: B
 
 x, y = 4, 3
 final = x * x + 2 * x * y + y * y
-print("({} + {}) ^ 2 = {}".format(x, y, final))                    # (4 + 3) ^ 2) = 49
+print("({} + {}) ^ 2 = {}".format(x, y, final))                     # (4 + 3) ^ 2) = 49
 #or
-print("({} + {}) ^ 2 = {}".format(x, y, x * x + 2 * x * y + y * y))# (4 + 3) ^ 2) = 49
+print("({} + {}) ^ 2 = {}".format(x, y, x * x + 2 * x * y + y * y)) # (4 + 3) ^ 2) = 49
 #or
-print('(%d + %d) ^ 2 = %d' % (x, y, final))                        # (4 + 3) ^ 2) = 49
+print('(%d + %d) ^ 2 = %d' % (x, y, final))                         # (4 + 3) ^ 2) = 49
