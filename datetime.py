@@ -37,7 +37,9 @@ print(x.second)
 print("Current date and time:")
 print(x)                                        # 2023-08-18 13:35:46.929428
 print(x.strftime("%Y-%m-%d %H:%M:%S %A %B"))    # 2023-08-18 13:35:46 Friday August
-print(x.strftime('%c'))                         # Fri Aug 18 13:35:46 2023
+import time
+print(time.ctime())                             # Fri Sep  1 18:29:07 2023
+print(x.strftime('%c'))                         # Fri Sep  1 18:30:09 2023
 print(x.strftime('%x'))                         # 08/18/23
 print(x.strftime('%X'))                         # 13:35:46
 print(x.strftime('%Z'))                         #
