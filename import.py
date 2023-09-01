@@ -9,6 +9,9 @@ print(getpass.getuser())                       #
 import math
 #print(pi)                                     # NameError
 print(math.pi)                                 # 3.141592653589793
+print(math.floor(4.5))                         # 4
+print(math.ceil(4.5))                          # 5
+
 from math import *
 print(pi)                                      # 3.141592653589793
 print(math.pi)                                 # 3.141592653589793
