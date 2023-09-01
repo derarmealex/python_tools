@@ -1,3 +1,6 @@
+print(sorted(globals().keys()))
+#['__annotations__', '__builtins__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__']
+
 import clss
 print(clss.f3.func())
 
