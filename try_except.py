@@ -1,5 +1,5 @@
 try:
-    f = open("demofile.txt")                        # фал должен быть создан, иначе исключение FileNotFound
+    f = open("demofile.txt")                                     # файл должен быть создан, иначе исключение FileNotFound
     f.write("Lorum Ipsum")
 except NameError:
     print("Переменная x не существует")
@@ -16,3 +16,10 @@ try:
    print("File found!")
 except FileNotFoundError:
    print("File not found!")
+
+while True:
+    try:
+        x = float(input())
+        break
+    except (ValueError, ZeroDivisionError):
+        print("\nEnter an integer or fractional number!".upper())
