@@ -13,6 +13,9 @@ This
 is a ....... multi-line
 heredoc string --------> example
     """)
+#CHARACTER
+x = 64
+print('%c' % (x))                                                   # @
 #.FORMAT()
 name, age = "Simon", 19                                             # Name: Simon
 address = "Bangalore, Karnataka, India"                             ##Age: 19
@@ -40,7 +43,7 @@ for i in range(0, 10):
 #CYCLE IN A ROW
 for i in range(1, 11):                                              #  1: 000000000010
     x = pow(10, i)                                                  ## 2: 000000000100 ...
-    print(f'{i:2d}: {x:012d}')                                      ##10: 010000000000
+    print(f'{i:>2}: {x:>012}')                                      ##10: 010000000000
 #or
 x = range(1, 11)                                                    #  1: 000000000010
 for i in x:                                                         ## 2: 000000000100 ...
