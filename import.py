@@ -14,6 +14,8 @@ print(round(math.modf(math.pi)[0], 2))         # 0.14
 print('%.2f, %i' % math.modf(math.pi))         # 0.14, 3
 print(math.floor(4.5))                         # 4
 print(math.ceil(4.5))                          # 5
+x = 2, 2
+print(math.prod(x))                            # 4
 
 from math import *
 print(pi)                                      # 3.141592653589793
