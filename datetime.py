@@ -35,17 +35,12 @@ print(x.hour)
 print(x.minute)
 print(x.second)
 print("Current date and time:")
+y = datetime.date.today()
 print(x)                                        # 2023-08-18 13:35:46.929428
+print(y)                                        # 2023-09-03
+print(z)                                        # 
 print(x.strftime("%Y-%m-%d %H:%M:%S %A %B"))    # 2023-08-18 13:35:46 Friday August
-import time
-print(time.ctime())                             # Fri Sep  1 18:29:07 2023
-print(x.strftime('%c'))                         # Fri Sep  1 18:30:09 2023
-print(x.strftime('%x'))                         # 08/18/23
-print(x.strftime('%X'))                         # 13:35:46
-print(x.strftime('%Z'))                         #
-print(x.strftime('%W'))                         # 33
-print(x.isocalendar().week)                     # 33
-#delta
+#DELTA
 x = datetime.datetime(2014,7,2)
 y = datetime.datetime(2014,7,11)
 print(abs(x - y))                               # 9 days, 0:00:00
@@ -56,3 +51,12 @@ x = datetime.date(2014,7,2)
 y = datetime.date(2014,7,11)
 final = abs(x - y)                              # 9 days, 0:00:00
 print(final.days)                               # 9
+
+import time
+print(time.ctime())                             # Fri Sep  1 18:29:07 2023
+print(x.strftime('%c'))                         # Fri Sep  1 18:30:09 2023
+print(x.strftime('%x'))                         # 08/18/23
+print(x.strftime('%X'))                         # 13:35:46
+print(x.strftime('%Z'))                         #
+print(x.strftime('%W'))                         # 33
+print(x.isocalendar().week)                     # 33
