@@ -7,18 +7,22 @@ def filter_odd_num(in_num):
 out_filter = filter(filter_odd_num, numbers)
 print("Filtered list: ", list(out_filter))                                          # [2, 4, 8, 10]
 
-list1 = ["Python", "CSharp", "Java", "Go"]
-list2 = ["Python", "Scala", "JavaScript", "Go", "PHP", "CSharp"]
+lst = ["Python", "CSharp", "Java", "Go"]
+lst2 = ["Python", "Scala", "JavaScript", "Go", "PHP", "CSharp"]
 def filter_duplicate(string_to_check):
     if string_to_check in ll:
         return False
     else:
         return True
-ll = list2
-out_filter = list(filter(filter_duplicate, list2))
-ll = list1
-out_filter += list(filter(filter_duplicate, list1))
+ll = lst2
+out_filter = list(filter(filter_duplicate, lst2))
+ll = lst
+out_filter += list(filter(filter_duplicate, lst))
 print(out_filter)                                                          # [‘Java’, ‘Scala’, ‘JavaScript’, ‘PHP’]
+#or
+x = [x for x in lst2 if x not in lst]
+y = [x for x in lst if x not in lst2]
+print(y + x)                                                               # ['Java', 'Scala', 'JavaScript', 'PHP']
 
 list_of_stop_words = ["в", "и", "по", "за"]
 string_to_process = "Сервис по поиску работы и сотрудников HeadHunter "
