@@ -9,6 +9,7 @@ print("Filtered list: ", list(out_filter))                                      
 
 lst = ["Python", "CSharp", "Java", "Go"]
 lst2 = ["Python", "Scala", "JavaScript", "Go", "PHP", "CSharp"]
+
 def filter_duplicate(string_to_check):
     if string_to_check in ll:
         return False
