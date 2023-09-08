@@ -22,7 +22,7 @@ print(pi)                                      # 3.141592653589793
 print(math.pi)                                 # 3.141592653589793
 
 import os
-os.system('clear')                             # clear console
+os.system('cls')                               # clear console
 print(os.name)                                 # nt
 print(os.cpu_count())                          # 4
 print(os.path.isabs('Bob Kerrey-The Band Played Waltzing Matilda.mp3'))  # True/False
