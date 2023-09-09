@@ -56,5 +56,3 @@ print(func(1))                                                     # 1
 print(func(3.5))                                                   # 3.5
 print(func(-5))                                                    # -5
 print(func())                                                      # 0
-
-input()

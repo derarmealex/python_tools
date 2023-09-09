@@ -5,7 +5,7 @@ def filter_odd_num(in_num):
     else:
         return False
 out_filter = filter(filter_odd_num, numbers)
-print("Filtered list: ", list(out_filter))                                          # [2, 4, 8, 10]
+print("Filtered list: ", list(out_filter))                                 # [2, 4, 8, 10]
 
 lst = ["Python", "CSharp", "Java", "Go"]
 lst2 = ["Python", "Scala", "JavaScript", "Go", "PHP", "CSharp"]
