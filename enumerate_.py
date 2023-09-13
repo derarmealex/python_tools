@@ -13,8 +13,8 @@ print(next(enumNames))                                  # (0, 'John')
 print(next(enumNames))                                  # (1, 'Jane')
 print(next(enumNames))                                  # (2, 'Doe')
 #print(next(enumNames))                                  # StopIteration
-#print([n for n in names])                               # ['John', 'Jane', 'Doe']
-#print([n for n in enumNames])                           # [(0, 'John'), (1, 'Jane'), (2, 'Doe')]
+print([n for n in names])                               # ['John', 'Jane', 'Doe']
+print([n for n in enumNames])                           # [(0, 'John'), (1, 'Jane'), (2, 'Doe')]
 for n, x in enumNames:
     print(f"№ {n} ==> {x}")                             # (0, 'John')
                                                         ##(1, 'Jane')

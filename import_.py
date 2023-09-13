@@ -1,8 +1,9 @@
-#import <library>
-#import <library> as <alias>
-#from <library> import *
-#from <library> import <object>
-#from <library> import <object> as <alias>
+# import <library>
+# import <library> as <alias>
+# from <library> import *
+# from <library> import <object>
+# from <library> import <object> as <alias>
+
 import getpass
 print(getpass.getuser())                       #
 
@@ -21,6 +22,11 @@ from math import *
 print(pi)                                      # 3.141592653589793
 print(math.pi)                                 # 3.141592653589793
 
+import inspect
+print(inspect.getmodule(math.modf))            # <module 'math' (built-in)>
+print(inspect.getmodule(math))                 # <module 'math' (built-in)>
+print(inspect.getmodule(math.pi))              # None
+
 import os
 os.system('cls')                               # clear console
 print(os.name)                                 # nt
@@ -32,20 +38,20 @@ print(os.path.islink('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/
 print(os.path.exists('Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # True/False
 print(os.path.lexists('Bob Kerrey-The Band Played Waltzing Matilda.mp3'))# True/False
 
-#C:\Users\alexa\Desktop\Bob Kerrey-The Band Played Waltzing Matilda.mp3
+# C:\Users\alexa\Desktop\Bob Kerrey-The Band Played Waltzing Matilda.mp3
 print(os.path.basename('E:\music\Various Artists\Bob Kerrey-The Band Played Waltzing Matilda.mp3'))
-#Bob Kerrey-The Band Played Waltzing Matilda.mp3
+# Bob Kerrey-The Band Played Waltzing Matilda.mp3
 print(os.path.getsize('E:\music\Various Artists\Bob Kerrey-The Band Played Waltzing Matilda.mp3')) # 4657964 [bytes]
 print(os.listdir('E:\music\playlist'))         # ['AaRON - Birds in the Storm.flac', 'AaRON - Inner Streets.flac...
-#print([f for f in listdir('E:\music\playlist') if isfile(join('E:\music\playlist', f))])
-#for data in os.environ:
+# print([f for f in listdir('E:\music\playlist') if isfile(join('E:\music\playlist', f))])
+# for data in os.environ:
 #    print(os.environ[data])                   # ...
 
 import os.path, time
-print("File         : %s" % __file__)          #File: C:\Users\alexa\Desktop\.py\python_tools\import.py
-print("Last modified: %s" % time.ctime(os.path.getmtime("dzagigrow-moon-calendar-2023.pdf")))#Last modified: Mon Jul 31 18:08:48 2023
-print("Created      : %s" % time.ctime(os.path.getctime("dzagigrow-moon-calendar-2023.pdf")))#Created: Mon Jul 31 18:08:48 2023
-print("Access time  : %s" % time.ctime(os.path.getatime("dzagigrow-moon-calendar-2023.pdf")))#Access time: Sat Sep  2 00:42:18 2023
+print("File         : %s" % __file__)          # File: C:\Users\alexa\Desktop\.py\python_tools\import.py
+print("Last modified: %s" % time.ctime(os.path.getmtime("dzagigrow-moon-calendar-2023.pdf")))# Last modified: Mon Jul 31 18:08:48 2023
+print("Created      : %s" % time.ctime(os.path.getctime("dzagigrow-moon-calendar-2023.pdf")))# Created: Mon Jul 31 18:08:48 2023
+print("Access time  : %s" % time.ctime(os.path.getatime("dzagigrow-moon-calendar-2023.pdf")))# Access time: Sat Sep  2 00:42:18 2023
 
 import platform
 print(platform.python_version())               # 3.11.5
