@@ -55,14 +55,26 @@ for i in range(1, 11):                                              #  1: 000000
 x = range(1, 11)                                                    #  1: 000000000010
 for i in x:                                                         ## 2: 000000000100 ...
     print(f'{i:2}: {x[-1] ** i:012}')                               ##10: 010000000000
-
+# ALIGNMENT WITH ZEROES - LEFT SIDE
 stg = '122.22'
-stg = float(stg)
+stg2 = float(stg)
 
-print(f'{stg:>010}')                                                # 0000122.22
-print(f'{stg:010}')                                                 # 0000122.22
+print(f'{stg2:>010}')                                               # 0000122.22
+print(f'{stg2:010}')                                                # 0000122.22
 # or
-print('{:>010}'.format(stg))                                        # 0000122.22
-print('{:010}'.format(stg))                                         # 0000122.22
+print('{:>010}'.format(stg2))                                       # 0000122.22
+print('{:010}'.format(stg2))                                        # 0000122.22
 # or
-print('%010.2f' % stg)                                              # 0000122.22
+print('%010.2f' % stg2)                                             # 0000122.22
+# or
+print(stg.rjust(10, '0'))                                           # 0000122.22
+# ALIGNMENT WITH ZEROES - RIGHT SIDE
+print(f'{stg2:<010f}')                                              # 122.220000
+print(f'{stg2:010f}')                                               # 122.220000
+# or
+print('{:<010f}'.format(stg2))                                      # 122.220000
+print('{:010f}'.format(stg2))                                       # 122.220000
+# or
+print('%f' % stg2)                                                  # 122.220000
+# or
+print(stg.ljust(10, '0'))                                           # 122.220000
