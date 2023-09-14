@@ -1,12 +1,10 @@
-x = 10
+x = int(input("Enter a number: "))
 match x:
     case 10:
-        print("Začátek bloku pro hodnotu 10.")
-        print("x je rovno 10. ")
-        print("Konec bloku pro hodnotu 10. Zde dojde k opuštění match.")
+        print("x is", x)                # x is 10
     case 20:
-        print("x je rovno 20.")
+        print("x is", x)                # x is 20
     case 30:
-        print("x je rovno 30.")
+        print("x is", x)                # x is 30
     case _:
-        print("x má jinou hodnotu.")
+        print("x is", x)                # x is ...
