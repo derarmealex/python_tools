@@ -23,7 +23,7 @@ heredoc string --------> example
 # CHARACTER
 x = 64
 print('%c' % x)                                                     # @
-# .FORMAT()
+# FORMAT
 name, age = "Simon", 19                                             # Name: Simon
 address = "Bangalore, Karnataka, India"                             ##Age: 19
 print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))  ##Address: Bangalore, Karnataka, India
@@ -78,3 +78,7 @@ print('{:010f}'.format(stg2))                                       # 122.220000
 print('%f' % stg2)                                                  # 122.220000
 # or
 print(stg.ljust(10, '0'))                                           # 122.220000
+# NUMERALS WITH COMMAS
+z = 1000000
+print(f'{z:,d}')                                                    # 1,000,000
+print(f'{z:,.2f}')                                                  # 1,000,000.00
