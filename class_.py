@@ -8,19 +8,23 @@ class Movies:
         title of the movie
     year: int
         release year
-    c: str
+    colour: str
         colour or black and white
     director: str
         director's name
-    main_actorx: str
-        main actors name(s)
+    main_actor: str
+        main actor's name
+    main_actor2: str
+        main actor's name
+    main_actor3: str
+        main actor's name
     ...
     Methods
     -------
     func():
         output referential info about the movie
     """
-    def __init__(self, name, year, c, director, main_actor, main_actor2='-', main_actor3='-'):
+    def __init__(self, name, year, colour, director, main_actor, main_actor2='-', main_actor3='-'):
         """
         set attributes for Movies
         ...
@@ -30,28 +34,34 @@ class Movies:
             title of the movie
         year: int
             release year
-        c: str
+        colour: str
             colour or black and white
         director: str
             director's name
-        main_actorx: str
-            main actors name(s)
+        main_actor: str
+            main actor's name
+        main_actor2: str
+            main actor's name
+        main_actor3: str
+            main actor's name
         """
-        self.colour = c
+        self.colour = colour
         self.name = name
         self.year = year
         self.director = director
         self.main_actor = main_actor
         self.main_actor2 = main_actor2
         self.main_actor3 = main_actor3
+
     def func(self):
-        '''
+        """
         flick
         ...
         output referential info about the movie
         if there's no more than one main actor, print '-' instead of the names
-        '''
+        """
         return f'{self.year}, {self.name}, {self.colour}, director: {self.director}, actors: {self.main_actor}, {self.main_actor2}, {self.main_actor3}'
+
 
 f1 = Movies('Baisers volés', 1968, 'colour', 'François Truffaut', 'Jean-Pierre Léaud')
 f2 = Movies('Het verloren paradijs', 1978, 'colour', 'Harry Kümel', 'Hugo Van Den Berghe', 'Willeke van Ammelrooy')
