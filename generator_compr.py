@@ -46,10 +46,10 @@ print([dct for dct in {"Name": "Alex", "Surname": "Green", "Password": "123"}]) 
 lst = ["a", "b", "c"]
 
 lst2 = iter(lst)
-print(next(lst2) * 2)                                                             # aa
-print(next(lst2))                                                                 # b
-print(next(lst2) + "e")                                                           # ce
-print(next(lst2))                                                                 # StopIteration
+print(next(lst2) * 2)                                                            # aa
+print(next(lst2))                                                                # b
+print(next(lst2) + "e")                                                          # ce
+print(next(lst2))                                                                # StopIteration
 # or
 out = (x for x in lst)                                                           # Generator
 print(next(out) * 2)                                                             # aa
