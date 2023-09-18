@@ -14,7 +14,7 @@ import json
 x = '{"name": "Viktor", "age": 30, "city": "Minsk"}'
 print(x)                                              # {"name": "Viktor", "age": 30, "city": "Minsk"}
 x = json.loads(x)
-print(x)                                              # {"name": "Viktor", "age": 30, "city": "Minsk"}
+print(x)                                              # {'name': 'Viktor', 'age': 30, 'city': 'Minsk'}
 # Python to JSON
 x = {
     "name": "Viktor",
@@ -23,7 +23,7 @@ x = {
     }
 print(x)                                              # {'name': 'Viktor', 'age': 30, 'city': 'Minsk'}
 x = json.dumps(x)
-print(x)                                              # {'name': 'Viktor', 'age': 30, 'city': 'Minsk'}
+print(x)                                              # {"name": "Viktor", "age": 30, "city": "Minsk"}
 # Cyrillic
 x = {"name": "Виктор"}
 y = {"name": "Виктор"}
