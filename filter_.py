@@ -41,7 +41,7 @@ print(y + x)                                                # ['Java', 'Scala', 
 
 
 # INTERSECTION
-def interSection(arr1, arr2):
+def intersection(arr1, arr2):
     out = list(filter(lambda it: it not in arr1, arr2))     # dev2
     print(''.join(out))
     out = list(filter(lambda it: it not in arr2, arr1))     # thon3
@@ -58,7 +58,7 @@ arr2 = 'Pydev 2.0'
 
 
 if __name__ == "__main__":
-    print(interSection(arr1, arr2))                         # [‘p’, ‘y’, ‘ ’, ‘.’, ‘0’]  # [‘d’, ‘e’, ‘v’, ‘2’] ...
+    print(intersection(arr1, arr2))                         # [‘p’, ‘y’, ‘ ’, ‘.’, ‘0’]  # [‘d’, ‘e’, ‘v’, ‘2’] ...
 # BOOL FILTER
 bools = ['bool', 0, None, True, False, 1, 1 - 1, 2 % 2]     # 1 0 0 1 0 1 0 0
 out = filter(None, bools)

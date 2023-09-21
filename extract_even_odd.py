@@ -10,6 +10,6 @@ for number in numbers:
 final = abs(even - odd)
 print("Difference is:", final)                                      # Difference is: 5
 # or
-even = [0 + number for number in range(1, 10) if number % 2 == 0]
 odd = [0 + number for number in range(1, 10) if number % 2 != 0]
+even = [0 + number for number in range(1, 10) if number % 2 == 0]
 print("Difference is:", abs(sum(even) - sum(odd)))                  # Difference is: 5
