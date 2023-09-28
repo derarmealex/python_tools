@@ -78,6 +78,13 @@ import socket
 print(socket.gethostname())                     # DESKTOP-TD4SVJM
 print(socket.gethostbyname('DESKTOP-TD4SVJM'))  # 10.0.0.1
 
+addr = '127.0.0.2561'
+try:
+    socket.inet_aton(addr)
+    print("Valid IP")
+except socket.error:
+    print("Invalid IP")
+
 import sys
 print(sys.version)                              # 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
 print(sys.platform)                             # win32
