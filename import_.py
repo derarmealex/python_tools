@@ -71,6 +71,9 @@ print(platform.machine())                       # AMD64
 print(platform.architecture())                  # ('64bit', 'WindowsPE')
 print(platform.architecture()[0])               # 64bit
 
+import struct
+print(struct.calcsize("P") * 8)                 # 64
+
 import site
 print(site.getsitepackages())                   # ['C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11 ...
 

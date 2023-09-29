@@ -1,3 +1,5 @@
+# format() - 2 arguments
+# .format() - many arguments
 # \n - nový řádek
 # \t - tabulátor
 # \a - zvonek (sekvecne pro pípnutí)
@@ -25,7 +27,7 @@ heredoc string --------> example
 # CHARACTER
 x = 64
 print('%c' % x)                                                     # @
-# FORMAT
+# .FORMAT()
 name, age = "Simon", 19                                             # Name: Simon
 address = "Bangalore, Karnataka, India"                             ##Age: 19
 print("Name: {}\nAge: {}\nAddress: {}".format(name, age, address))  ##Address: Bangalore, Karnataka, India
@@ -113,6 +115,7 @@ print(f'{stg2:010}')                                                # 0000122.22
 # or
 print('{:>010}'.format(stg2))                                       # 0000122.22
 print('{:010}'.format(stg2))                                        # 0000122.22
+print(format(stg2, '010'))                                          # 0000122.22
 # or
 print('%010.2f' % stg2)                                             # 0000122.22
 # or
@@ -121,6 +124,7 @@ print(stg.rjust(10, '0'))                                           # 0000122.22
 print(f'{stg2:<010}')                                               # 122.220000
 # or
 print('{:<010}'.format(stg2))                                       # 122.220000
+print(format(stg2, '010f'))                                         # 122.220000
 # or
 print('%f' % stg2)                                                  # 122.220000
 # or
