@@ -1,3 +1,28 @@
+# METHOD * FOR ARG (** FOR KWARG)
+def func(*tpl):
+    return tpl * 2
+
+
+print(func(1, 3.5, -5, 0))                              # (1, 3.5, -5, 0, 1, 3.5, -5, 0)
+
+
+# or
+def func(*tpl):
+    print(tpl)                                          # (1, 3.5, -5, 0)
+    print(tpl[0])                                       # 1
+    print(tpl[1])                                       # 3.5
+    print(tpl[2])                                       # 5
+    print(tpl[3])                                       # 0
+    final = []
+    for num in tpl:
+        final.append(num * 2)
+    print(final)                                        # [2, 7.0, -10, 0]
+    print(', '.join([str(item) for item in final]))     # 2, 7.0, -10, 0
+
+
+func(1, 3.5, -5, 0)                                     # 2
+
+
 def func():
     return "Hi, I'm Func"                                          # ...
 
@@ -86,14 +111,4 @@ def func(x=0):
 print(func(1))                                                     # 5
 print(func(3.5))                                                   # 17.5
 print(func(-5))                                                    # -25
-print(func())                                                      # 0
-
-
-def func(x=0):
-    return x
-
-
-print(func(1))                                                     # 1
-print(func(3.5))                                                   # 3.5
-print(func(-5))                                                    # -5
 print(func())                                                      # 0
