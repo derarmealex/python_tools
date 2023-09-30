@@ -27,6 +27,11 @@ import time
 x = time.ctime()
 print(x)                                        # Fri Aug 18 13:35:46 2023
 
+stg = "Hello, World!"                           # H
+for i in range(0, len(stg)):                    ##e
+    print(stg[i])                               ##l
+    time.sleep(1)                               ##l ...
+
 import datetime
 print(datetime.__name__)
 print(datetime.__doc__)
