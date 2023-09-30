@@ -1,3 +1,5 @@
+# enumerates()
+
 names = ["John", "Jane", "Doe"]
 # FORMAT: START WITH ANY NUMBER
 enumNames = enumerate(names, 10)
@@ -11,7 +13,7 @@ print(dict(enumerate(names)))                           # {0: 'John', 1: 'Jane',
 # OUTPUT
 print([n for n in names])                               # ['John', 'Jane', 'Doe']
 print([n for n in enumNames])                           # [(0, 'John'), (1, 'Jane'), (2, 'Doe')]
-
+# START FROM 1
 enumNames = enumerate(names, 1)
 for n, x in enumNames:
     print(f"№ {n} ==> {x}")                             # № 1 ==> John
