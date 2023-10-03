@@ -26,6 +26,7 @@ print(math.floor(4.5))                          # 4
 print(math.ceil(4.5))                           # 5
 x = 2, 2
 print(math.prod(x))                             # 4
+print(math.sqrt(25))                            # 5.0
 
 from math import *
 print(pi)                                       # 3.141592653589793
