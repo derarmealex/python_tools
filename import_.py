@@ -59,7 +59,7 @@ print("This file    : %s" % __file__)
 print("Last modified: %s" % time.ctime(os.path.getmtime(".gitignore")))
 print("Created      : %s" % time.ctime(os.path.getctime(".gitignore")))
 print("Access time  : %s" % time.ctime(os.path.getatime(".gitignore")))
-# This file    : C:\Users\alexa\Desktop\py\python_syntax\qq.py
+# This file    : C:\Users\alexa\Desktop\py\python_syntax\draft1_syntax.py
 # Last modified: Fri Sep 15 13:46:48 2023
 # Created      : Wed Sep 13 14:38:01 2023
 # Access time  : Sun Sep 17 17:43:23 2023
