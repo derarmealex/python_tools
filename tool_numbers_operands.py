@@ -49,9 +49,11 @@ print(x + y)                    # 13/12
 x = 35
 x2 = 35
 x3 = '35'
-print(hex(id(x)))               # 0x7ff9d2bbe768
-print(hex(id(x2)))              # 0x7ff9d2bbe768
-print(hex(id(x3)))              # 0x1e72711a7b0
-print(id(x))                    # 140710959114088
-print(id(x2))                   # 140710959114088
-print(id(x3))                   # 2092304541616
+print(hex(id(x)))               # 0x7ff8143ecdf8
+print(hex(id(x2)))              # 0x7ff8143ecdf8
+print(hex(id(x3)))              # 0x21e5e9e7f00
+print(hex(id(str(x2))))         # 0x21e5eb0c570
+print(hex(id(int(x3))))         # 0x7ff8143ecdf8
+print(id(x))                    # 140703468277240
+print(id(x2))                   # 140703468277240
+print(id(x3))                   # 2329459719936
