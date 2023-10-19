@@ -1,8 +1,48 @@
 # bool()
-# all()
-# any()
+# all()             True if every element is True
+# any()             True if at least 1 element is True
 # isinstance()
 
+# ISINSTANCE()
+a = 10
+b = 20.23
+c = "10"
+
+
+def add_numbers(a, b):
+    if isinstance(a, int) and isinstance(b, int):
+        return a + b
+    return "Inputs must be integers!"
+
+
+print(add_numbers(a, a))                                # 20
+print(add_numbers(a, b))                                # Inputs must be integers!
+
+
+# or
+print(a == int(a))                                      # True
+print(a == str(a))                                      # False
+print(a == float(a))                                    # True
+
+print(b == int(b))                                      # False
+print(b == str(b))                                      # False
+print(b == float(b))                                    # True
+
+print(c == int(c))                                      # False
+print(c == str(c))                                      # True
+print(c == float(c))                                    # False
+# ANY()
+print("any()")
+x = [3, 399, -3, 99]
+print(any(x))                                           # True
+print(any(isinstance(x, str) for x in x))               # False
+print(any(9 for x in x))                                # True
+print(any('-' for x in x))                              # True
+print(any(0 for x in x))                                # False
+
+num = [2, 3, 4, 5]
+print(all(x > 1 for x in num))                          # True
+print(all(x > 4 for x in num))                          # False
 # TRUE/FALSE TO 1/0
 x = True
 y = False
@@ -141,46 +181,3 @@ def test(num, n):
 num = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 print(test(num, 12))                                    # False
 print(test(num, 5))                                     # True
-
-
-# ANY()
-x = [3, 399, -3, 99]
-print(any(isinstance(x, str) for x in x))               # False
-print(any(9 for x in x))                                # True
-print(any('-' for x in x))                              # True
-print(any(0 for x in x))                                # False
-
-
-num = [2, 3, 4, 5]
-print(all(x > 1 for x in num))                          # True
-print(all(x > 4 for x in num))                          # False
-
-
-# ISINSTANCE()
-a = 10
-b = 20.23
-c = "10"
-
-
-def add_numbers(a, b):
-    if isinstance(a, int) and isinstance(b, int):
-        return a + b
-    return "Inputs must be integers!"
-
-
-print(add_numbers(a, a))                                # 20
-print(add_numbers(a, b))                                # Inputs must be integers!
-
-
-# or
-print(a == int(a))                                      # True
-print(a == str(a))                                      # False
-print(a == float(a))                                    # True
-
-print(b == int(b))                                      # False
-print(b == str(b))                                      # False
-print(b == float(b))                                    # True
-
-print(c == int(c))                                      # False
-print(c == str(c))                                      # True
-print(c == float(c))                                    # False
