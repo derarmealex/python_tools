@@ -24,7 +24,7 @@
 # writelines(lines)         Записывает список строк (lines) в файл.
 
 if not __name__ == "__main__":
-    file = open("tool_files_txt.txt")                   # = file1 = open("tool_files_txt.txt", "r")
+    file = open("tool_files_txt.txt")               # = file1 = open("tool_files_txt.txt", "r")
     file2 = open("tool_files_txt.txt", "r+b")
     file3 = open("tool_files_txt2.txt")
 
@@ -41,17 +41,29 @@ if not __name__ == "__main__":
     finally:
         file.close()
     print("\n")
-# RECOMMENDED
+# RECOMMENDED WAY TO OPEN
     with open("tool_files_txt.txt", "r") as file:
         read_content = file.read()
         print(read_content)
 # WRITE ADDITIONAL TEXT AFTER THE END (IF IS NOT FILE WILL BE CREATED)
-with open("tool_files_txt2.txt", "r+") as file:
-    print(file.read(), "\n")
-    file.write("\n\nAlexander Blok")                    # called file will be edited!
-#    print(file.read())                                 # changes won't be visible until reopening
-file = open("tool_files_txt2.txt")
-read_content = file.read()
-print(read_content)
-file.close()
-
+    with open("tool_files_txt2.txt", "r+") as file:
+        print(file.read(), "\n")
+        file.write("\n\nAlexander Blok")                # called file will be edited right away!
+    #    print(file.read())                             # changes won't be visible until reopening
+    file = open("tool_files_txt2.txt")
+    read_content = file.read()
+    print(read_content)
+    file.close()
+# REWRITE FILE (IF IS NOT FILE WILL BE CREATED)
+    with open("tool_files_txt_draft.txt", "w+") as file: # file created
+        file.write("trying\nanother one")               # file edited
+# EXCLUSIVE CREATING
+    with open("tool_files_txt_draft.txt", "x") as file:
+        file.write("trying\nanother one")               # FileExistsError: [Errno 17] File exists: 'tool_fil ...
+# READABILITY
+file = open("tool_files_txt.txt")
+file4 = open("tool_files_jpg.jpg")
+file5 = open("tool_files_pdf.pdf")
+print(file.readable())                                  # True
+print(file4.readable())                                 # True
+print(file5.readable())                                 # True
