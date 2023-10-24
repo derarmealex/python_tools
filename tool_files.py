@@ -63,7 +63,7 @@ if not __name__ == "__main__":
 # READABILITY
 file = open("tool_files_txt.txt")
 file4 = open("tool_files_jpg.jpg")
-file5 = open("tool_files_pdf.pdf")
+file5 = open("C:\\Users\\alexa\\Desktop\\Dingir304.pdf")
 print(file.readable())                                  # True
 print(file4.readable())                                 # True
 print(file5.readable())                                 # True
