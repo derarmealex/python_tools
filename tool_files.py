@@ -23,7 +23,7 @@
 # write(s) 	                Записывает строку (s) в файл и возвращает количество записанных символов.
 # writelines(lines)         Записывает список строк (lines) в файл.
 
-if not __name__ == "__main__":
+if __name__ == "__main__":
     file = open("tool_files_txt.txt")               # = file1 = open("tool_files_txt.txt", "r")
     file2 = open("tool_files_txt.txt", "r+b")
     file3 = open("tool_files_txt2.txt")
@@ -36,8 +36,8 @@ if not __name__ == "__main__":
     try:
     #    read_content = file.read()
         print(read_content)
-    except:
-        pass
+    except Exception as e:
+        print(e)
     finally:
         file.close()
     print("\n")
@@ -49,6 +49,8 @@ if not __name__ == "__main__":
     with open("tool_files_txt2.txt", "r+") as file:
         print(file.read(), "\n")
         file.write("\n\nAlexander Blok")                # called file will be edited right away!
+# or
+#        print("\n\nAlexander Blok", file=file)
     #    print(file.read())                             # changes won't be visible until reopening
     file = open("tool_files_txt2.txt")
     read_content = file.read()
